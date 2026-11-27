@@ -1273,7 +1273,7 @@
     <div class="project-card reveal">
       <div class="project-number">06 / 2026</div>
       <div class="project-title">MJDA</div>
-      <p class="project-desc">MJ Dance Academy is a premium full-stack MERN application built to manage a dance academy with a cinematic dark-themed UI and powerful admin capabilities. Features secure JWT authentication, OTP-based password resets, automated Nodemailer emails, student enrollment portal, and a protected admin dashboard for course CRUD and enquiry management.</p>
+      <p class="project-desc">MJ Dance Academy is a premium full-stack MERN application built to manage a dance academy with a cinematic dark-themed UI and powerful admin capabilities. Features secure JWT authentication, OTP-based password resets, automated Nodemailer emails and a protected admin dashboard for course CRUD and enquiry management.</p>
       <div class="project-stack">
         <span class="stack-tag">React.js</span>
         <span class="stack-tag">Vite</span>
@@ -1289,7 +1289,8 @@
     <div class="project-card reveal">
       <div class="project-number">04 / 2026</div>
       <div class="project-title">SafeTrial</div>
-      <p class="project-desc">SafeTrail is an AI-powered smart tourist safety platform that uses Geo-Fencing, Blockchain-based Digital IDs, and real-time incident monitoring to enhance traveller security. The system enables secure tourist verification, panic alerts with live location sharing, and real-time dashboards for police and tourism authorities.</p> <div class="project-stack">
+      <p class="project-desc">SafeTrail is an AI-powered smart tourist safety platform that uses Geo-Fencing, Blockchain-based Digital IDs, and real-time incident monitoring to enhance traveller security. The system enables secure tourist verification, panic alerts with live location sharing, and real-time dashboards for police and tourism authorities.</p> 
+      <div class="project-stack">
         <span class="stack-tag">React.js</span>
         <span class="stack-tag">Spring Boot</span>
         <span class="stack-tag">PostgreSQL</span>
@@ -1826,14 +1827,14 @@ const heroObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if(entry.isIntersecting) {
       const stats = document.querySelectorAll('.stat-num');
-      const data = [400, 1700, 873, 10];
+      const data = [490, 1700, 870, 10];
       const suffix = ['', '', '', ''];
       stats.forEach((el,i) => {
         if(i===2) {
-          let s=0, dur=1800, v=873;
+          let s=0, dur=1800, v=870;
           const t = ts => { if(!s)s=ts; const p=Math.min((ts-s)/dur,1); el.textContent=(p*v/100).toFixed(2); if(p<1)requestAnimationFrame(t); };
           requestAnimationFrame(t);
-        } else { animateCounter(el, data[i], data[i]===400?'+': data[i]===1700?'+':data[i]===10?'+':''); }
+        } else { animateCounter(el, data[i], data[i]===490?'+': data[i]===1700?'+':data[i]===10?'+':''); }
       });
       heroObserver.disconnect();
     }
